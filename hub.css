@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+
+input{
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border: none;
+    transition: width 0.35s;
+}
+input:focus{
+    outline: none;
+
+}
+
+
+button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.search{
+    position: relative;
+
+}
+
+.search.active input{
+    width: 200px;
+}
+.search.active button{
+    transform:translateX(200px)
+}
+
+header {
+    background-image: url(./purse\ shoe-3635212_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+}
+
+.nav-icons{
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    min-height: 80;
+    z-index: 2;
+} 
+ .nav.sticky{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    min-height: 80;
+    z-index: 2;
+    background-color: #252830;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: indigo;
+    font-size: 0.9em;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+    padding-left: 38em;
+}
+
+.text{
+    position: absolute;
+    top: 12em;
+    left: 20em;
+    color: white;
+    padding: 5em;
+    text-align: center;
+    font-family: ‘Roboto’, Arial, Helvetica, sans-serif;
+}
+
+
+.text button{
+    top: 12em;
+    left: 20em;
+    color: indigo;
+    background-color: lightcoral;
+    width: 100px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.card img{
+    max-height: 50vh;
+    max-width: 50vh;
+    padding: 10px;
+    
+}
+
+.card{
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+.card-name{
+    padding: 30px;
+}
+
+.add{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.section-back{
+    background-image: url(./blossom\ pendant-1623448585160-48b86b876b32.jfif);
+    /* background-color: rgb(250, 75, 17) */
+}
+
+.history{
+    max-width: 65%;
+    padding-top: 6em;
+    text-align: center;
+    left: 10em;
+    color: rgb(71, 13, 37);
+    margin: auto;
+}
+.history h1{
+    font-size: 24px;
+    font-weight: 100;
+}
+.history p{
+    padding: 3em;
+    letter-spacing: 0.5px;
+    line-height: 1.45em;
+    font-size: 16px;
+    /* margin-left: 20px; */
+}
+
+.item img{
+    max-height: 50vh;
+    /* max-width: 50vh; */
+    /* padding: 10px; */
+    
+}
+
+.item{
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 15px;
+    padding: 10px;
+}
+
+.items{
+    display: flex;
+}
+
+.handles ul{
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 50px;
+
+    
+}
+
+.edition{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px){ 
+    header {
+        min-height: 50vh;
+    }
+
+    .nav ul{
+        display: block;
+    }
+
+    .edition{
+        display: block;
+        padding-left: 60px;
+    }
+
+    .item img{
+        max-height: 25vh;
+    }
+
+    .items{
+        display: block;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .nav-icons{
+        display: block;
+    }
+    .search.active input{
+        width: 50px;
+    }
+    .search.active button{
+        transform:translateX(50px)
+    }
+
+    .nav ul{
+        display: block;
+    }
+
+    /* .add{
+        display: block;
+    } */
+
+
+
+
+    
+}
